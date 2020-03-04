@@ -72,7 +72,7 @@
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
-          <nav{{ navbar_top_attributes }}>
+          <nav class="navbar-expand-sm navbar" id="navbar-top">
           {% if container_navbar %}
           <div class="container">
           {% endif %}
