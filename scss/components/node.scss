@@ -6,6 +6,11 @@
 .node__content {
     font-size: $font-size-base;
     margin-top: $spacer;
+    display: flex;
+    flex-direction: column;
+    .field--name-body {
+        max-width: 940px;
+    }
 }
 
 

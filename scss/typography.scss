@@ -18,11 +18,13 @@ sans-serif;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: -apple-system,
-system-ui,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
+
+// -apple-system,
+//system-ui,
+//BlinkMacSystemFont,
+//"Segoe UI",
+//Roboto,
+$font-family-sans-serif:
 "Helvetica Neue",
 Arial,
 sans-serif !default;
@@ -53,6 +55,6 @@ $font-size-h5: 1.25rem;
 $font-size-h6: 1rem;
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Chivo', $font-family-sans-serif;
+  font-family: 'Chivo', $font-family-serif;
   font-weight: 700;
 }
