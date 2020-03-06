@@ -133,7 +133,11 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
+      {% if is_front %}
+        <div id="main" class="container-fluid">
+      {% else %}
         <div id="main" class="{{ container }}">
+      {% endif %}
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
