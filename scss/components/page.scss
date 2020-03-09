@@ -29,6 +29,8 @@
       .paragraph--type--home-story {
         display: flex;
         flex-direction: row;
+        border-bottom: 1px solid $accent-shade;
+        margin-bottom: 1rem;
         .field--name-field-story-title {
           font-weight: 700;
           font-size: 1.25rem;
@@ -47,3 +49,10 @@
     }
   }
  }
+
+ .node .paragraph--type--home-story {
+  .field--type-image {
+    float: none;
+    margin: 0
+  }
+}

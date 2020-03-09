@@ -44,3 +44,7 @@
 .views-ui-display-tab-actions .dropbutton .form-submit:focus {
     color: $link-color;
 }
+
+.view-news-block .views-row {
+    border-bottom: 1px solid $accent-shade;
+}
