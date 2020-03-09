@@ -3,7 +3,36 @@
  * Styles for Bootstrap Barrio page.
  */
 
- .field--name-field-single-text {
-   max-width: 940px;
-   margin: 0 auto;
+
+
+ .field--name-field-blocks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   .paragraph--type--single-column-text {
+    flex: 1 1 100%;
+     .field--name-field-single-text {
+      max-width: 940px;
+      margin: 0 auto;
+     }
+  }
+  .paragraph--type--left-col-home {
+    flex: 1 1 20%;
+    margin-left: 1rem;
+  }
+  .paragraph--type--middle-col-home {
+    flex: 1 1 45%;
+    .field--name-field-stories {
+      display: flex;
+      flex-direction: column;
+      .paragraph--type--home-story {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  .paragraph--type--right-col-home {
+    flex: 1 1 30%;
+    margin-right: 1rem;
+  }
  }
