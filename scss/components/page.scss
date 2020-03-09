@@ -17,22 +17,33 @@
      }
   }
   .paragraph--type--left-col-home {
-    flex: 1 1 20%;
-    margin-left: 1rem;
+    flex: 0 0 18%;
+    margin-left: 2rem;
   }
   .paragraph--type--middle-col-home {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
+    margin-right: 2rem;
     .field--name-field-stories {
       display: flex;
       flex-direction: column;
       .paragraph--type--home-story {
         display: flex;
         flex-direction: row;
+        .field--name-field-story-title {
+          font-weight: 700;
+          font-size: 1.25rem;
+        }
+        .home-story-text {
+          padding-right: 2rem;
+        }
       }
     }
   }
   .paragraph--type--right-col-home {
     flex: 1 1 30%;
     margin-right: 1rem;
+    h3 {
+      font-size: 1.25rem;
+    }
   }
  }
