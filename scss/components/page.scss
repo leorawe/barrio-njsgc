@@ -30,6 +30,7 @@
         flex-direction: row;
         border-bottom: 1px solid $accent-shade;
         margin-bottom: 1rem;
+        justify-content: space-between;
         .field--name-field-story-title {
           font-weight: 700;
           font-size: 1.25rem;
@@ -43,6 +44,9 @@
   .paragraph--type--right-col-home {
     flex: 1 1 30%;
     margin-right: 1rem;
+    .node__title {
+      padding-top: 1rem;
+    }
     h3 {
       font-size: 1.25rem;
     }
