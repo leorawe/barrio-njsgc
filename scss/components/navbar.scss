@@ -1,12 +1,24 @@
 #navbar-main {
   border-top: 1px solid $accent-shade;
   border-bottom: 1px solid $accent-shade;
-  .menu--main li a {
-    color: $link-color;
-    padding: 0 1rem;
-    border-bottom: 1px solid transparent;
-    &:hover, &:focus {
-      border-bottom: 1px solid $accent-shade;
+  .menu--main li {
+    padding: .5rem 0;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+      a {
+        color: $link-color;
+        padding: 0 1rem;
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+        &.is-active {
+          font-weight: 700;
+        }
+      }
+      &:hover, &:focus {
+        background-color: $gray-100;
+        border-right: 1px solid $accent-shade;
+        border-left: 1px solid $accent-shade;
       }
     }
   .navbar-toggler-icon {
@@ -15,6 +27,14 @@
   .dropdown-item.active, .dropdown-item:active {
     background-color: #ffffff;
   }
+}
+
+.navbar#navbar-main {
+  padding: 0 1rem;
+}
+
+.dropdown-menu {
+  padding: 0;
 }
 
 .region-top-header {
