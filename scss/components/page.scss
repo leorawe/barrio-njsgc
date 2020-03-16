@@ -17,10 +17,11 @@
   .paragraph--type--left-col-home {
     flex: 0 0 18%;
     margin-left: 2rem;
+    margin-right: 1%;
   }
   .paragraph--type--middle-col-home {
-    flex: 1 1 40%;
-    margin-right: 2rem;
+    flex: 1 1 37%;
+    margin-right: 4%;
     .field--name-field-stories {
       display: flex;
       flex-direction: column;
@@ -58,5 +59,28 @@
 .path-frontpage {
   h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .field--name-field-blocks {
+    .paragraph--type--left-col-home {
+      flex: 0 1 100%;
+      margin-left: 0;
+      margin-right: 0;
+      .field__items {
+        display: flex;
+        flex-wrap: wrap;
+        .field__item {
+          flex: 0 1 200px;
+        }
+      }
+    }
+    .paragraph--type--middle-col-home {
+      flex: 0 1 100%;
+    }
+    .paragraph--type--right-col-home {
+      flex: 0 1 100%;
+    }
   }
 }
