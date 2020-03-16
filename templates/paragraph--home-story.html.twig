@@ -54,7 +54,11 @@
       {{ content.field_story_teaser }}
       {{ content.field_story_link }}
       </div>
-      {{ content.field_home_thumb }}
+      {% if content.field_story_link[0]['#title']=='' %}
+        {{ content.field_home_thumb }}
+      {% else %}
+        <a href="{{ content.field_story_link[0]['#url'] }}">{{ content.field_home_thumb }}</a>
+      {% endif  %}
     {% endblock %}
   </div>
 {% endblock paragraph %}
