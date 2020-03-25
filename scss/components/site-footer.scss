@@ -8,13 +8,23 @@
     .layout-container {
         padding: 0 $spacer;
     }
+    .block {
+    border: none;
+    }
 }
 
 
 /* Footer Top Styling. */
 
-.site-footer__top .content {
+.site-footer__top {
+
+    .content {
     margin-top: 0;
+    color: #ffffff;
+    }
+    .region-footer-fourth {
+      float:right;
+    }
 }
 
 
