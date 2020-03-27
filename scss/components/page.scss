@@ -89,6 +89,9 @@
         flex: 0 1 100%;
         margin-left: 0;
         margin-right: 0;
+        h2 {
+          padding-left: 15px;
+        }
         .field__items {
           justify-content: space-evenly;
           display: flex;
@@ -106,6 +109,19 @@
       }
       .paragraph--type--right-col-home {
         flex: 0 1 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .path-frontpage {
+    .field--name-field-blocks {
+      .paragraph--type--left-col-home {
+        .field__items {
+          justify-content: flex-start;
+          padding-left: 15px;
+        }
       }
     }
   }
